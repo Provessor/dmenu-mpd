@@ -1,4 +1,4 @@
-# Project Title
+# dmenu-mpd
 
 A simple script for controlling mpd from dmenu
 
