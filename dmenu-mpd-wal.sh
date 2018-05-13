@@ -1,8 +1,10 @@
 #!/bin/bash
+# Colours from pywal
+. "${HOME}/.cache/wal/colors.sh"
 
-# Dmenu arguments
+# Dmenu arguments for colours
 # Change "System San Francisco Display-13" to your front in form "[full name]-[size]"
-dmenu='dmenu -i -fn "System San Francisco Display-13"'
+dmenu='dmenu -i -nb "$color0" -nf "$color15" -sb "$color1" -sf "$color15" -fn "System San Francisco Display-13"'
 
 crossfade() {
   local crossfade=`echo -e "0\n5" | dmenu -p "Crossfade"`
@@ -10,7 +12,9 @@ crossfade() {
 }
 
 current() {
+  # For a formatted current output
   #echo -e `mpc current -f "%track% - %title% - %artist% - %album%"` | dmenu -p "Crossfade"
+
   echo -e `mpc current` | dmenu -p "Crossfade"
 }
 
@@ -48,6 +52,7 @@ load() {
   mpc play
 }
 
+# Get user action
 RESULT=`echo -e "Consume\nCrossfade\nCurrent\nNext\nPause\nPlay\nPrev\nRandom\nRepeat\nSingle\nSeek\nStop\nToggle\nClear\nSearch\nPlaylist\nLoad" | dmenu -p "Music"`
 
 case "$RESULT" in
