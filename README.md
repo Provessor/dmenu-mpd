@@ -14,15 +14,16 @@ A simple script for controlling mpd from dmenu
 
 ### Running
 
-The script currently does not take any arguments. Simply run `dmenu-mpd.sh` or
-`dmenu-mpd-wal.sh` to use your pywal colourscheme (if it exists).
-
-### i3
-
 Download the repo:
 ```
 git clone https://github.com/provessor/dmenu-mpd
 ```
+
+Run `dmenu-mpd.sh` or `dmenu-mpd-wal.sh` to use your pywal colourscheme (if it exists).
+
+The script currently does not take any arguments. 
+
+### i3
 
 Bind to a key:
 ```
