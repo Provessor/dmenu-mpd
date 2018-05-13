@@ -2,7 +2,7 @@
 
 # Dmenu font
 # Change "System San Francisco Display-13" to your front in form "[full name]-[size]"
-font="System San Francisco Display-13"
+font="System San Francisco Display-12"
 
 crossfade() {
   local crossfade=`echo -e "0\n5" | dmenu -i -fn "$font" -p "Crossfade"`

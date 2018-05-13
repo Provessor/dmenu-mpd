@@ -4,7 +4,7 @@
 
 # Dmenu arguments for colours
 # Change "System San Francisco Display-13" to your front in form "[full name]-[size]"
-font="System San Francisco Display-13"
+font="System San Francisco Display-12"
 
 crossfade() {
   local crossfade=`echo -e "0\n5" | dmenu -i -nb "$color0" -nf "$color15" -sb "$color1" -sf "$color15" -fn "$font" -p "Crossfade"`
